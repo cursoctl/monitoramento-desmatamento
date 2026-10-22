@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: desmat
+Version: 0.1.0
+Summary: Monitoramento de desmatamento com PRODES, MapBiomas e PostGIS
+Requires-Python: >=3.10

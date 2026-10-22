@@ -1,0 +1,13 @@
+name: desmat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - geopandas
+  - sqlalchemy
+  - geoalchemy2
+  - psycopg2
+  - requests
+  - python-dotenv
+  - pytest
+  - pip
