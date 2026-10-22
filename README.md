@@ -52,13 +52,15 @@ tests/        testes automatizados
 - PRODES e MapBiomas têm metodologias e áreas mínimas de mapeamento diferentes; as diferenças são parte da análise.
 - Confirmar versão e data de cada base baixada (registrar em `docs/fontes.md`).
 
-## Roadmap
+## 🏁 Roadmap do Projeto
 
-- [ ] MVP: PRODES + municípios IBGE no PostGIS
-- [ ] Integrar MapBiomas
-- [ ] Dashboard Power BI com 3 páginas
-- [ ] Camada DETER e agendamento (GitHub Actions)
-- [ ] Cruzamento com CAR e unidades de conservação
+- [x] **MVP:** Carga e padronização cartográfica (reprojeção de CRS para EPSG:4674) via Python (`GeoPandas`).
+- [x] **Arquitetura de Banco:** Infraestrutura isolada via Docker e PostGIS com criação de índices espaciais `GIST`.
+- [x] **Auditoria Territorial:** Criação de `MATERIALIZED VIEW` para cálculo performático de intersecção espacial de talhões em UTM.
+- [x] **Mapa Web Interativo:** Script em Python (`Folium`) gerando mapas dinâmicos em HTML sobrepostos a camadas de satélite.
+- [ ] **Camada Analítica Executiva:** Conexão do modelo de dados do PostGIS no Power BI para criação das 3 páginas de Dashboards.
+- [ ] **DevSecOps:** Implementação de pipeline de CI/CD (GitHub Actions) com testes automáticos de segurança e integridade de código (`pytest` / `Bandit`).
+
 
 ## Autor
 
