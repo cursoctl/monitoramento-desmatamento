@@ -1,0 +1,17 @@
+# Ignorar ambiente virtual e caches do Python
+.venv/
+__pycache__/
+*.pyc
+
+# Ignorar o arquivo de credenciais do banco (CRUCIAL!)
+.env
+
+# Ignorar dados brutos e temporários de teste
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Ignorar caches do pytest
+.pytest_cache/
+
